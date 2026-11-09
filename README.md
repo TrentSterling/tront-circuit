@@ -1,16 +1,25 @@
-# tront-circuit
+# CURRENT — circuit toy
 
-CURRENT, the circuit toy (EveryCircuit-style, JS/WebGL2, single self-contained HTML files, no build, no deps).
+A free browser circuit toy. Walk around a first-person workshop, snap batteries, resistors, capacitors, LEDs and switches together, pull the power, and watch the current flow. Overdrive an LED and it burns out; fix it and keep going.
 
+**Play:** https://tront.xyz/circuit (once published) or open `index.html` locally.
+
+## Controls (Workshop V2)
+- `WASD` move, mouse to look
+- `1`–`6` spawn parts
+- Click to grab and connect, `R` rotate, `Q` cancel a wire
+- `F` use, `Space` pull the power
+
+## Files
+- `index.html` game page
 - `workshop-v2.html` Workshop 02, magnetic circuit playground (latest)
 - `live-circuit-lab.html` Live Circuit Lab 01 (original)
-- `index.html` landing page linking both
 
-Source of truth for the originals: private repo `TrentSterling/prototype-archive`, `html/`.
+Everything is a single self-contained HTML file: no build, no dependencies, works offline and from `file://`. Run `Run-Circuit.cmd` on Windows for a double-click launch.
 
-## Run locally
-Double-click `index.html` (or `Run-Circuit.cmd`). Works from file://.
+## Publishing at tront.xyz/circuit
+tront.xyz is GitHub Pages from `TrentSterling/trentsterling.github.io` (one folder per page). Copy `index.html`, `workshop-v2.html`, `live-circuit-lab.html` into `circuit/` there.
 
-## Deploy to tront.xyz/circuit
-tront.xyz is GitHub Pages from `TrentSterling/trentsterling.github.io` (root, one folder per page, e.g. `/calm`, `/colony`).
-To publish: copy these three html files into `circuit/` in that repo and push. Not done yet, waits for go.
+Originals archived in private `TrentSterling/prototype-archive` (`html/`).
+
+License: MIT, © Trent Sterling.
